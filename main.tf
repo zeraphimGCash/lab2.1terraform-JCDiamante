@@ -1,4 +1,12 @@
 terraform {
+
+  cloud {
+    organization = "lab2dot2-JCDiamante"
+    workspaces {
+      name = "fecp-cycle4-Diamante"
+    }
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
